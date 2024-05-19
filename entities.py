@@ -69,7 +69,7 @@ class Record:
             phones_part = f', phones: {'; '.join(p.value for p in self.phones)}'
 
         if self.birthday != None:
-            birthday_part = f', {self.birthday.strftime('%d.%m.%Y')}'
+            birthday_part = f', {self.birthday.value.strftime('%d.%m.%Y')}'
         
         return f'Contact name: {self.name.value}{phones_part}{birthday_part}'
 
